@@ -25,17 +25,18 @@ Recursively simulates future states to select the optimal move.
 
 # Static Evaluation Heuristic
 The AI scores the board based on:
-## Center Column Control:<br> +3 per AI disc (central control boosts connectivity). </br>
+## Center Column Control: 
+    +3 per AI disc (central control boosts connectivity).
 ## Four-cell sliding windows:
-+100 for 4 AI pieces (win)
-+5 for 3 AI + 1 empty (strong opportunity)
-+2 for 2 AI + 2 empty (moderate)
--4 for 3 opponent + 1 empty (block)
+    +100 for 4 AI pieces (win)
+    +5 for 3 AI + 1 empty (strong opportunity)
+    +2 for 2 AI + 2 empty (moderate)
+    -4 for 3 opponent + 1 empty (block)
 ## Example Score Analysis (Score: -3):
-Center control: +3
-Player horizontal advantage: -5
-AI moderate opportunities: +2
-Diagonal threats: -3
+    Center control: +3
+    Player horizontal advantage: -5
+    AI moderate opportunities: +2
+    Diagonal threats: -3
 
 # User Interaction
 User inputs column number (0–6) via terminal.
