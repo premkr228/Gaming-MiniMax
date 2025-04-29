@@ -45,9 +45,9 @@ The project implements a command-line-based Connect Four game where a human play
 ### <br>Discs:</br>
    <br> Red: Human Player</br>
    <br> Yellow: AI</br>
-### <br>Latest move:</br>
-    <br>Human: yellow border</br>
-    <br>AI: black border</br>
+### <br>Latest move:<br>
+    <br> Human: yellow border </br>
+    <br> AI: black border </br>
 
 # Edge Case Handling
 <br>Prevents invalid inputs (e.g., non-numeric or out-of-range).</br>
