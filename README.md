@@ -11,50 +11,50 @@ The project implements a command-line-based Connect Four game where a human play
 <br>Handles invalid input and interruptions gracefully.</br>
 
 # Game Mechanics
-Board is a 7-column × 6-row grid.
-Discs drop to the lowest available space in the selected column.
-Turn-based gameplay: human player first, AI follows.
-Win condition: Four connected discs horizontally, vertically, or diagonally.
-Draw occurs when the board is full without a winner.
+<br>Board is a 7-column × 6-row grid.</br>
+<br>Discs drop to the lowest available space in the selected column.</br>
+<br>Turn-based gameplay: human player first, AI follows.</br>
+<br>Win condition: Four connected discs horizontally, vertically, or diagonally.</br>
+<br>Draw occurs when the board is full without a winner.</br>
 
 # AI Strategy (Minimax Algorithm)
-Evaluates possible future states to a fixed depth.
-Prioritizes winning or blocking moves immediately.
-Scoring heuristics evaluate board favorability.
-Recursively simulates future states to select the optimal move.
+<br>Evaluates possible future states to a fixed depth.</br>
+<br>Prioritizes winning or blocking moves immediately.</br>
+<br>Scoring heuristics evaluate board favorability.</br>
+<br>Recursively simulates future states to select the optimal move.</br>
 
 # Static Evaluation Heuristic
-The AI scores the board based on:
-## Center Column Control: 
-    +3 per AI disc (central control boosts connectivity).
+<br>The AI scores the board based on:</br>
+## Center Column Control:
+   <br> +3 per AI disc (central control boosts connectivity).</br>
 ## Four-cell sliding windows:
-    +100 for 4 AI pieces (win)
-    +5 for 3 AI + 1 empty (strong opportunity)
-    +2 for 2 AI + 2 empty (moderate)
-    -4 for 3 opponent + 1 empty (block)
+   <br> +100 for 4 AI pieces (win)</br>
+   <br> +5 for 3 AI + 1 empty (strong opportunity)</br>
+   <br> +2 for 2 AI + 2 empty (moderate)</br>
+   <br> -4 for 3 opponent + 1 empty (block)</br>
 ## Example Score Analysis (Score: -3):
-    Center control: +3
-    Player horizontal advantage: -5
-    AI moderate opportunities: +2
-    Diagonal threats: -3
+   <br> Center control: +3</br>
+   <br> Player horizontal advantage: -5</br>
+   <br> AI moderate opportunities: +2</br>
+   <br> Diagonal threats: -3</br>
 
 # User Interaction
-User inputs column number (0–6) via terminal.
-AI counters using Minimax strategy.
-Board updates shown after each move.
-Discs:
-    Red: Human Player
-    Yellow: AI
-Latest move:
-    Human: yellow border
-    AI: black border
+<br>User inputs column number (0–6) via terminal.</br>
+<br>AI counters using Minimax strategy.</br>
+<br>Board updates shown after each move.</br>
+<br>Discs:</br>
+   <br> Red: Human Player</br>
+   <br> Yellow: AI</br>
+<br>Latest move:</br>
+    <br>Human: yellow border</br>
+    <br>AI: black border</br>
 
 # Edge Case Handling
-Prevents invalid inputs (e.g., non-numeric or out-of-range).
-Avoids full column selections.
-Graceful exit on keyboard interruption.
+<br>Prevents invalid inputs (e.g., non-numeric or out-of-range).</br>
+<br>Avoids full column selections.</br>
+<br>Graceful exit on keyboard interruption.</br>
 
 # Visualization
-Board displayed via Matplotlib.
-Differentiated highlights for user and AI moves.
-Dual-view: player’s move (left), AI’s response (right).
+<br>Board displayed via Matplotlib.</br>
+<br>Differentiated highlights for user and AI moves.</br>
+<br>Dual-view: player’s move (left), AI’s response (right).</br>
