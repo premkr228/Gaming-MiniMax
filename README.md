@@ -4,7 +4,7 @@
 The project implements a command-line-based Connect Four game where a human player competes against an AI. The AI employs the Minimax algorithm to make strategic decisions, with the game board visually represented using Matplotlib for clarity and engagement.
 
 # Features
-7x6 grid where players drop discs in turns.
+<br>7x6 grid where players drop discs in turns.</br>
 Automatic detection of winning conditions.
 AI uses depth-limited Minimax with strategic evaluation.
 Board visualization using Matplotlib with move highlights.
