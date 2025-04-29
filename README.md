@@ -25,7 +25,7 @@ Recursively simulates future states to select the optimal move.
 
 # Static Evaluation Heuristic
 The AI scores the board based on:
-## Center Column Control: +3 per AI disc (central control boosts connectivity).
+## Center Column Control: ### +3 per AI disc (central control boosts connectivity).
 ## Four-cell sliding windows:
 +100 for 4 AI pieces (win)
 +5 for 3 AI + 1 empty (strong opportunity)
