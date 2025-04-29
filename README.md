@@ -5,10 +5,10 @@ The project implements a command-line-based Connect Four game where a human play
 
 # Features
 <br>7x6 grid where players drop discs in turns.</br>
-Automatic detection of winning conditions.
-AI uses depth-limited Minimax with strategic evaluation.
-Board visualization using Matplotlib with move highlights.
-Handles invalid input and interruptions gracefully.
+<br>Automatic detection of winning conditions.</br>
+<br>AI uses depth-limited Minimax with strategic evaluation.</br>
+<br>Board visualization using Matplotlib with move highlights.</br>
+<br>Handles invalid input and interruptions gracefully.</br>
 
 # Game Mechanics
 Board is a 7-column × 6-row grid.
