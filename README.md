@@ -25,14 +25,14 @@ The project implements a command-line-based Connect Four game where a human play
 
 # Static Evaluation Heuristic
 <br>The AI scores the board based on:</br>
-## Center Column Control:
+### Center Column Control:
    <br> +3 per AI disc (central control boosts connectivity).</br>
-## Four-cell sliding windows:
+### Four-cell sliding windows:
    <br> +100 for 4 AI pieces (win)</br>
    <br> +5 for 3 AI + 1 empty (strong opportunity)</br>
    <br> +2 for 2 AI + 2 empty (moderate)</br>
    <br> -4 for 3 opponent + 1 empty (block)</br>
-## Example Score Analysis (Score: -3):
+### Example Score Analysis (Score: -3):
    <br> Center control: +3</br>
    <br> Player horizontal advantage: -5</br>
    <br> AI moderate opportunities: +2</br>
@@ -42,10 +42,10 @@ The project implements a command-line-based Connect Four game where a human play
 <br>User inputs column number (0–6) via terminal.</br>
 <br>AI counters using Minimax strategy.</br>
 <br>Board updates shown after each move.</br>
-<br>Discs:</br>
+### <br>Discs:</br>
    <br> Red: Human Player</br>
    <br> Yellow: AI</br>
-<br>Latest move:</br>
+### <br>Latest move:</br>
     <br>Human: yellow border</br>
     <br>AI: black border</br>
 
